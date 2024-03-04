@@ -1,0 +1,15 @@
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\bin\Debug\net8.0\Myfristapp.exe
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\bin\Debug\net8.0\Myfristapp.deps.json
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\bin\Debug\net8.0\Myfristapp.runtimeconfig.json
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\bin\Debug\net8.0\Myfristapp.dll
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\bin\Debug\net8.0\Myfristapp.pdb
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.AssemblyInfo.cs
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.sourcelink.json
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.dll
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\refint\Myfristapp.dll
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.pdb
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\Myfristapp.genruntimeconfig.cache
+C:\Users\DELL\Documents\Portafolio\Net c#\Myfristapp\obj\Debug\net8.0\ref\Myfristapp.dll
