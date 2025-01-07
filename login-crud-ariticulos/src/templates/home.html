@@ -1,0 +1,111 @@
+{% extends './base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<h1>Bienvenido, {{ current_user.fullname }}</h1>
+<a class="btn btn-secondary" href="{{ url_for('logout') }}">Logout</a>
+<div class="container-fluid">
+    <h1>Artículos Tecnológicos</h1>
+    
+    <!-- Botón para crear un nuevo artículo -->
+    <div class="row">
+        <div class="col-4">
+            {% include 'partials/_message.html' %}
+            <form action="/admin/crear" method="POST" class="card bg-black text-light">
+               
+                <div class="card-body p-4">
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                  <h1 class="h5 mb-4">Add Product</h1>
+              
+                  <div class="mb-3">
+                    <label for="fullname">Write code:</label>
+                    <input
+                      type="text"
+                      name="codigo"
+                      class="form-control rounded-0 bg-dark border-0 text-white"
+                      placeholder="Write fullname"
+                      autofocus
+                    />
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="email">Write name product:</label>
+                    <input
+                      type="text"
+                      name="nombre"
+                      class="form-control rounded-0 bg-dark border-0 text-white"
+                      placeholder="Write your email"
+                      required
+                    />
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="phone">Write cantidad</label>
+                    <input
+                      type="int"
+                      name="cantidad"
+                      class="form-control rounded-0 bg-dark border-0 text-white"
+                      placeholder="numeros"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="phone">Write precio</label>
+                    <input
+                      type="float"
+                      name="precio"
+                      class="form-control rounded-0 bg-dark border-0 text-white"
+                      placeholder="numeros decimales"
+                    />
+                  </div>
+              
+                  <button class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-8">
+            
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>codigo</th>
+                        <th>descripcion</th>
+                        <th>cantidad</th>
+                        <th>precio</th>
+                        <th>acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="articles-list">
+                    <!-- Aquí se llenarán los artículos dinámicamente -->
+                    
+                    {% for articulo in articulos %}
+                        <tr>
+                            <td>{{ articulo.id }}</td>
+                            <td>{{ articulo.codigo }}</td>
+                            <td>{{ articulo.nombre}}</td>
+                            <td>{{ articulo.cantidad }}</td>
+                            <td>{{ articulo.precio }}</td>
+                            
+                            <td>
+                                <a href="/admin/edit/{{ articulo.id }}" class="btn btn-primary">Editar</a>
+                                <a href="/admin/delete/{{ articulo.id }}" class="btn btn-danger">Eliminar</a>
+                                
+                            </td>
+            
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+                
+        </div>
+
+    </div>
+    
+    
+
+
+</div>
+
+{% endblock %}
